@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Guia Completo de Depilação Corporal e Íntima</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Poppins', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+        Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+      background: linear-gradient(135deg, #f9f9f9 0%, #fff1f5 100%);
+      color: #333;
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 2rem 1.5rem 4rem;
+      line-height: 1.7;
+      transition: background 0.3s ease, color 0.3s ease;
+    }
+
+    /* Tema Escuro */
+    body.dark-theme {
+      background: linear-gradient(135deg, #2c2c2c 0%, #1a1a1a 100%);
+      color: #e0e0e0;
+    }
+
+    body.dark-theme h1,
+    body.dark-theme h2,
+    body.dark-theme h3 {
+      color: #ff80ab;
+    }
+
+    body.dark-theme h2 {
+      border-bottom: 3px solid #ff80ab;
+    }
+
+    body.dark-theme h3 {
+      color: #ff4081;
+    }
+
+    body.dark-theme blockquote {
+      background: #3c2f3c;
+      border-left: 8px solid #ff80ab;
+      color: #e0b0cc;
+    }
+
+    body.dark-theme table {
+      background: #333;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    }
+
+    body.dark-theme th {
+      background: linear-gradient(135deg, #ff4081, #d81b60);
+      color: #fff;
+    }
+
+    body.dark-theme tr:nth-child(even) {
+      background-color: #444;
+    }
+
+    body.dark-theme .tab-nav {
+      background: #333;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    }
+
+    body.dark-theme .tab-button {
+      color: #ff80ab;
+    }
+
+    body.dark-theme .tab-button:hover {
+      background: #4a3c4a;
+    }
+
+    body.dark-theme .tab-button.active {
+      background: #ff4081;
+      color: #fff;
+      box-shadow: inset 0 -2px 0 #d81b60;
+    }
+
+    body.dark-theme .tab-content {
+      background: #333;
+      border: 1px solid #555;
+    }
+
+    body.dark-theme a {
+      color: #ff80ab;
+    }
+
+    body.dark-theme a:hover {
+      color: #ff4081;
+    }
+
+    body.dark-theme footer {
+      color: #aaa;
+      border-top: 2px solid #555;
+    }
+
+    /* Botão de Alternância de Tema */
+    .theme-toggle {
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: #c2185b;
+      color: white;
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 1rem;
+      transition: background 0.3s ease;
+    }
+
+    .theme-toggle:hover {
+      background: #ad1457;
+    }
+
+    .theme-toggle.dark {
+      background: #ff4081;
+    }
+
+    .theme-toggle.dark:hover {
+      background: #d81b60;
+    }
+
+    /* Estilos Existentes */
+    h1, h2, h3 {
+      color: #c2185b;
+      margin-top: 2.5rem;
+    }
+    h1 {
+      font-size: 2.5rem;
+      text-align: center;
+      margin-bottom: 1.5rem;
+      font-weight: 600;
+      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    h2 {
+      font-size: 2rem;
+      border-bottom: 3px solid #c2185b;
+      padding-bottom: 0.5rem;
+      margin-top: 3.5rem;
+      font-weight: 500;
+    }
+    h3 {
+      font-size: 1.5rem;
+      margin-top: 2.5rem;
+      color: #6d2f4a;
+      font-weight: 400;
+    }
+    p, li, blockquote {
+      font-size: 1.1rem;
+    }
+    ul {
+      padding-left: 1.5rem;
+      margin-top: 0.5rem;
+    }
+    blockquote {
+      background: #fff5f7;
+      border-left: 8px solid #c2185b;
+      margin: 1.5rem 0;
+      padding: 1rem 1.5rem;
+      font-style: italic;
+      color: #8e2c4f;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      margin-top: 1.5rem;
+      font-size: 1rem;
+      background: #fff;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+    th, td {
+      border: 1px solid #e0e0e0;
+      padding: 0.8rem 1rem;
+      text-align: center;
+    }
+    th {
+      background: linear-gradient(135deg, #c2185b, #d81b60);
+      color: white;
+      font-weight: 500;
+    }
+    tr:nth-child(even) {
+      background-color: #fce4ec;
+    }
+    a {
+      color: #c2185b;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+    a:hover {
+      color: #ad1457;
+      text-decoration: underline;
+    }
+    footer {
+      margin-top: 5rem;
+      font-size: 0.95rem;
+      color: #666;
+      text-align: center;
+      border-top: 2px solid #e0e0e0;
+      padding-top: 1.5rem;
+    }
+    .tab-container {
+      margin-top: 2.5rem;
+    }
+    .tab-nav {
+      display: flex;
+      flex-wrap: wrap;
+      border-bottom: 3px solid #c2185b;
+      background: #fff;
+      border-radius: 8px 8px 0 0;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    .tab-button {
+      flex: 1;
+      padding: 1rem;
+      background: transparent;
+      border: none;
+      font-size: 1.1rem;
+      color: #c2185b;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      text-align: center;
+      border-radius: 8px 8px 0 0;
+    }
+    .tab-button:hover {
+      background: #fce4ec;
+      transform: translateY(-2px);
+    }
+    .tab-button.active {
+      background: #c2185b;
+      color: white;
+      font-weight: 500;
+      box-shadow: inset 0 -2px 0 #ad1457;
+    }
+    .tab-content {
+      display: none;
+      padding: 2rem;
+      background: #fff;
+      border: 1px solid #e0e0e0;
+      border-top: none;
+      border-radius: 0 0 8px 8px;
+      margin-bottom: 3rem;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+    .tab-content.active {
+      display: block;
+    }
+    @media (max-width: 768px) {
+      body {
+        padding: 1rem;
+      }
+      h1 {
+        font-size: 2rem;
+      }
+      h2 {
+        font-size: 1.6rem;
+      }
+      h3 {
+        font-size: 1.3rem;
+      }
+      .tab-button {
+        font-size: 0.95rem;
+        padding: 0.8rem;
+      }
+      .tab-content {
+        padding: 1.5rem;
+      }
+      table {
+        font-size: 0.9rem;
+      }
+      th, td {
+        padding: 0.6rem;
+      }
+      .theme-toggle {
+        top: 0.5rem;
+        right: 0.5rem;
+        padding: 0.4rem 0.8rem;
+        font-size: 0.9rem;
+      }
+    }
+    @media (max-width: 480px) {
+      .tab-nav {
+        flex-direction: column;
+      }
+      .tab-button {
+        width: 100%;
+        border-radius: 0;
+        border-bottom: 1px solid #e0e0e0;
+      }
+      .tab-button.active {
+        border-radius: 0;
+      }
+      .theme-toggle {
+        top: 0.5rem;
+        right: 0.5rem;
+        padding: 0.3rem 0.7rem;
+        font-size: 0.85rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Botão de Alternância de Tema -->
+  <button class="theme-toggle" onclick="toggleTheme()">🌙 Modo Escuro</button>
+
+  <h1>🍑 Guia Completo de Depilação Corporal e Íntima</h1>
+
+  <p>Este projeto é um guia prático, direto e seguro para depilar <strong>todo o corpo</strong> — com foco especial nas áreas <strong>íntimas e glúteas</strong>. Aqui você vai aprender os prós, contras e formas corretas de usar lâmina, creme depilatório, cera ou laser com segurança.</p>
+
+  <div class="tab-container">
+    <div class="tab-nav">
+      <button class="tab-button active" onclick="openTab('introducao')">Introdução</button>
+      <button class="tab-button" onclick="openTab('metodos')">Métodos de Depilação</button>
+      <button class="tab-button" onclick="openTab('regioes')">Adaptação por Região</button>
+      <button class="tab-button" onclick="openTab('cuidados')">Cuidados Pós-Depilação</button>
+      <button class="tab-button" onclick="openTab('prevencao')">Prevenção e Tratamento</button>
+      <button class="tab-button" onclick="openTab('faq')">FAQ e Glossário</button>
+    </div>
+
+        <div id="introducao" class="tab-content active">
+      <h2>📌 Este guia serve para:</h2>
+      <ul>
+        <li>✅ Pernas, braços, axilas, costas e barriga</li>
+        <li>✅ Virilha, nádegas e ao redor do ânus</li>
+        <li>⚠️ Regiões íntimas internas (lábios vaginais, saco escrotal, canal anal) — com <strong>muito cuidado</strong></li>
+      </ul>
+      <blockquote>Este conteúdo é informativo. Para dúvidas específicas ou reações, consulte um dermatologista.</blockquote>
+    </div>
+
+    <div id="metodos" class="tab-content">
+      <h2>✂️ Métodos de Depilação</h2>
+
+      <h3>1. 🪒 Lâmina (Gilete)</h3>
+      <p><strong>✔️ Prós:</strong></p>
+      <ul>
+        <li>Rápido e fácil de fazer em casa</li>
+        <li>Custo baixo</li>
+        <li>Indolor se feito corretamente</li>
+      </ul>
+      <p><strong>✘ Contras:</strong></p>
+      <ul>
+        <li>Pode causar cortes, coceiras e irritações</li>
+        <li>Crescimento rápido (1–3 dias)</li>
+        <li>Risco de foliculite e pelos encravados</li>
+      </ul>
+      <p><strong>🔧 Como fazer:</strong></p>
+      <ol>
+        <li>Tome um banho morno antes (amolece os pelos e abre os poros).</li>
+        <li>Aplique creme de barbear, sabonete íntimo ou óleo corporal para lubrificar.</li>
+        <li>Raspe devagar, no sentido do crescimento dos pelos.</li>
+        <li>Enxágue bem e seque com toalha macia.</li>
+        <li>Aplique um hidratante calmante sem álcool (ex: aloe vera, bepantol).</li>
+      </ol>
+      <blockquote>⚠️ Evite fazer isso "às cegas" — use um espelho ou peça ajuda de alguém de confiança.</blockquote>
+
+      <hr />
+
+      <h3>2. 🧴 Creme Depilatório</h3>
+      <p><strong>✔️ Prós:</strong></p>
+      <ul>
+        <li>Indolor</li>
+        <li>Rápido e prático</li>
+        <li>Ideal para peles sensíveis (quando apropriado)</li>
+      </ul>
+      <p><strong>✘ Contras:</strong></p>
+      <ul>
+        <li>Pode causar reações alérgicas</li>
+        <li>Nem todos são próprios para a região íntima</li>
+        <li>Odor forte de alguns produtos</li>
+      </ul>
+      <p><strong>🔧 Como fazer:</strong></p>
+      <ol>
+        <li>Escolha um creme específico para a área íntima.</li>
+        <li>Faça um teste de alergia 24h antes em uma pequena área.</li>
+        <li>Aplique com espátula e deixe o tempo indicado na embalagem (geralmente 5 a 10 minutos).</li>
+        <li>Remova com espátula ou água morna.</li>
+        <li>Hidrate bem a pele com produto suave e sem álcool.</li>
+      </ol>
+      <blockquote>⚠️ Nunca aplique diretamente nas mucosas. Apenas na área externa.</blockquote>
+
+      <hr />
+
+      <h3>3. 🕯 Cera Quente ou Fria</h3>
+      <p><strong>✔️ Prós:</strong></p>
+      <ul>
+        <li>Resultados duram até 3–4 semanas</li>
+        <li>Puxa o pelo pela raiz, afinando com o tempo</li>
+        <li>Crescimento mais lento</li>
+      </ul>
+      <p><strong>✘ Contras:</strong></p>
+      <ul>
+        <li>Dói, principalmente em áreas sensíveis</li>
+        <li>Risco de queimaduras ou manchas se mal aplicada</li>
+        <li>Pode causar pelos encravados</li>
+      </ul>
+      <p><strong>🔧 Como fazer:</strong></p>
+      <ol>
+        <li>Aqueça a cera até o ponto ideal (morna, não quente demais).</li>
+        <li>Teste a temperatura em outra parte do corpo antes de aplicar na região íntima.</li>
+        <li>Aplique na direção do crescimento do pelo.</li>
+        <li>Puxe com firmeza no sentido contrário.</li>
+        <li>Limpe os resíduos e aplique um gel calmante (ex: camomila, aloe vera).</li>
+      </ol>
+      <blockquote>⚠️ Não use se estiver com a pele irritada, ferida ou queimada de sol.</blockquote>
+
+      <hr />
+
+      <h3>4. 💥 Depilação a Laser</h3>
+      <p><strong>✔️ Prós:</strong></p>
+      <ul>
+        <li>Redução permanente dos pelos após sessões</li>
+        <li>Previne foliculite e irritações</li>
+        <li>Menor manutenção ao longo do tempo</li>
+      </ul>
+      <p><strong>✘ Contras:</strong></p>
+      <ul>
+        <li>Alto custo</li>
+        <li>Requer várias sessões (geralmente 6–10)</li>
+        <li>Pode causar hiperpigmentação em peles mais escuras (dependendo do equipamento)</li>
+      </ul>
+      <p><strong>🔧 Como fazer:</strong></p>
+      <ol>
+        <li>Agende avaliação em clínica especializada.</li>
+        <li>Evite tomar sol ou usar outros métodos (cera, pinça) antes da sessão.</li>
+        <li>Raspe os pelos da área 1 dia antes da sessão (não remova pela raiz).</li>
+        <li>Durante o procedimento, o profissional aplicará o laser com equipamento específico.</li>
+        <li>Hidrate e use filtro solar íntimo, caso se exponha ao sol após o procedimento.</li>
+      </ol>
+      <blockquote>⚠️ Escolha clínicas com aparelhos próprios para seu tipo de pele (principalmente peles negras ou sensíveis).</blockquote>
+
+      <hr />
+
+      <h3>5. 🔍 Depilação com Pinça</h3>
+      <p><strong>✔️ Prós:</strong></p>
+      <ul>
+        <li>Excelente para remover pelos isolados e indesejados</li>
+        <li>Preciso e barato</li>
+        <li>Sem uso de produtos químicos</li>
+      </ul>
+      <p><strong>✘ Contras:</strong></p>
+      <ul>
+        <li>Demorado para grandes áreas</li>
+        <li>Pode causar dor e irritação local</li>
+      </ul>
+      <p><strong>🔧 Como fazer:</strong></p>
+      <ol>
+        <li>Higienize a pinça antes e após o uso.</li>
+        <li>Desinfete a pele com álcool 70% ou antisséptico.</li>
+        <li>Segure o pelo pela raiz e puxe devagar na direção do crescimento.</li>
+        <li>Aplique um gel calmante após a remoção para reduzir irritação.</li>
+      </ol>
+
+      <hr />
+
+      <h3>6. ⚡ Depilação com Aparelho Elétrico (Epilador)</h3>
+      <p><strong>✔️ Prós:</strong></p>
+      <ul>
+        <li>Remove pelos pela raiz, resultando em pele lisa por semanas</li>
+        <li>Praticidade para uso em casa</li>
+        <li>Menos caro que laser</li>
+      </ul>
+      <p><strong>✘ Contras:</strong></p>
+      <ul>
+        <li>Doloroso, principalmente nas primeiras vezes</li>
+        <li>Requer sessões regulares</li>
+        <li>Pode causar pelos encravados e irritação</li>
+      </ul>
+      <p><strong>🔧 Como fazer:</strong></p>
+      <ol>
+        <li>Esfolie a pele 1-2 dias antes para prevenir pelos encravados.</li>
+        <li>Use o epilador em pele limpa e seca.</li>
+        <li>Mantenha o aparelho em ângulo correto e movimente lentamente.</li>
+        <li>Aplique um hidratante calmante após a sessão.</li>
+      </ol>
+    </div>
+
+    <div id="regioes" class="tab-content">
+      <h2>📍 Adaptação por Região — Guia Detalhado</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Região</th>
+            <th>Métodos Recomendados</th>
+            <th>Cuidados Específicos</th>
+            <th>Observações</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Pernas</td>
+            <td>Gilete, Creme, Cera, Laser, Epilador</td>
+            <td>Esfolie antes para evitar pelos encravados; hidrate bem após</td>
+            <td>Área menos sensível, ideal para todos os métodos</td>
+          </tr>
+          <tr>
+            <td>Braços</td>
+            <td>Gilete, Creme, Cera, Laser, Epilador</td>
+            <td>Mantenha a pele limpa; evite produtos com álcool se sensível</td>
+            <td>Facilidade para depilação em casa</td>
+          </tr>
+          <tr>
+            <td>Axilas</td>
+            <td>Gilete, Creme, Cera (fria preferível), Laser</td>
+            <td>Evite cera quente para peles sensíveis; se irritar, suspenda o uso</td>
+            <td>Área propensa a irritações e foliculite</td>
+          </tr>
+          <tr>
+            <td>Virilha Externa</td>
+            <td>Gilete (com cuidado), Creme (íntimo), Cera (profissional), Laser</td>
+            <td>Teste alergia para cremes; use espelho para precisão; higiene rigorosa</td>
+            <td>Área sensível, evite métodos agressivos sem experiência</td>
+          </tr>
+          <tr>
+            <td>Lábios Vaginais</td>
+            <td>Laser (profissional), Depilação com pinça (isolados)</td>
+            <td>Nunca use lâmina ou creme; somente profissionais treinados</td>
+            <td>Área muito delicada; alto risco de irritação e infecção</td>
+          </tr>
+          <tr>
+            <td>Ao Redor do Ânus</td>
+            <td>Laser, Gilete (com cuidado e espelho)</td>
+            <td>Higienização reforçada; evite cremes e cera caseira</td>
+            <td>Área sensível e difícil de acessar; cuidado máximo</td>
+          </tr>
+          <tr>
+            <td>Nádegas (Bundinha)</td>
+            <td>Gilete, Creme, Cera, Laser</td>
+            <td>Use espelho para ajudar; hidratação importante para evitar irritações</td>
+            <td>Região delicada, porém pode receber todos os métodos com cuidado</td>
+          </tr>
+          <tr>
+            <td>Rosto (Sobrancelhas e Bigode)</td>
+            <td>Pinça, Cera (profissional), Laser</td>
+            <td>Evite creme depilatório; faça testes prévios para alergia</td>
+            <td>Área delicada; procure profissionais para cera e laser</td>
+          </tr>
+          <tr>
+            <td>Costas</td>
+            <td>Gilete, Cera, Laser, Epilador</td>
+            <td>Depilação profissional pode facilitar; cuidado com alcance</td>
+            <td>Área grande, difícil para auto-depilação completa</td>
+          </tr>
+          <tr>
+            <td>Barriga</td>
+            <td>Gilete, Creme, Cera, Laser, Epilador</td>
+            <td>Evite depilar se houver feridas ou irritações</td>
+            <td>Área versátil para vários métodos</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h2>📍 Adaptação por Região — Resumo</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Região</th>
+            <th>Pode usar Gilete</th>
+            <th>Pode usar Creme</th>
+            <th>Pode usar Cera</th>
+            <th>Pode fazer Laser</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Pernas e braços</td>
+            <td>✅ Sim</td>
+            <td>✅ Sim</td>
+            <td>✅ Sim</td>
+            <td>✅ Sim</td>
+          </tr>
+          <tr>
+            <td>Axilas</td>
+            <td>✅ Sim</td>
+            <td>✅ Sim</td>
+            <td>✅ Sim</td>
+            <td>✅ Sim</td>
+          </tr>
+          <tr>
+            <td>Virilha externa</td>
+            <td>✅ Sim</td>
+            <td>✅ Sim (íntimo)</td>
+            <td>✅ Sim (com cuidado)</td>
+            <td>✅ Sim</td>
+          </tr>
+          <tr>
+            <td>Lábios vaginais</td>
+            <td>⚠️ Com muito cuidado</td>
+            <td>❌ Não</td>
+            <td>⚠️ Só profissional</td>
+            <td>✅ Sim</td>
+          </tr>
+          <tr>
+            <td>Ao redor do ânus</td>
+            <td>✅ Sim (com espelho)</td>
+            <td>⚠️ Íntimo apenas</td>
+            <td>⚠️ Só profissional</td>
+            <td>✅ Sim</td>
+          </tr>
+          <tr>
+            <td>Nádegas (bundinha)</td>
+            <td>✅ Sim</td>
+            <td>✅ Sim</td>
+            <td>✅ Sim</td>
+            <td>✅ Sim</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div id="cuidados" class="tab-content">
+      <h2>🧼 Cuidados Pós-Depilação</h2>
+      <ul>
+        <li>Evite sol, suor, piscina e atrito por 24 horas</li>
+        <li>Use hidratante calmante (sem álcool)</li>
+        <li>Evite roupas muito apertadas para não irritar a pele</li>
+        <li>Esfolie suavemente após 2–3 dias para evitar pelos encravados</li>
+        <li>Não coce ou esfregue a área depilada, mesmo que coce</li>
+        <li>Evite usar perfumes, desodorantes ou produtos com álcool na área depilada nas primeiras 24 horas</li>
+        <li>Prefira banho morno e evite água muito quente</li>
+        <li>Mantenha a pele sempre hidratada para acelerar a recuperação</li>
+        <li>Se notar vermelhidão ou irritação, aplique compressas frias ou gel de aloe vera</li>
+        <li>Evite exercícios físicos intensos que provoquem muito suor nas primeiras 24 horas</li>
+      </ul>
+    </div>
+
+    <div id="prevencao" class="tab-content">
+      <h2>🛡️ Dicas para Prevenir Pelos Encravados</h2>
+      <ul>
+        <li>Esfolie regularmente para remover células mortas.</li>
+        <li>Evite roupas muito apertadas que causem atrito.</li>
+        <li>Hidrate a pele diariamente para mantê-la saudável.</li>
+        <li>Use métodos adequados para seu tipo de pele e área do corpo.</li>
+        <li>Considere produtos específicos com ácido salicílico ou aloe vera para prevenir inflamações.</li>
+      </ul>
+
+      <h2>🚫 Como Evitar e Tratar Pelos Encravados</h2>
+      <h3>Como evitar pelos encravados:</h3>
+      <ul>
+        <li>🧼 Esfolie a pele regularmente (2 a 3 vezes por semana) para remover células mortas.</li>
+        <li>💧 Hidrate bem a pele para mantê-la macia e facilitar a saída dos pelos.</li>
+        <li>➡️ Depile sempre no sentido do crescimento do pelo.</li>
+        <li>⚠️ Evite depilar pele irritada, sensível ou com feridas.</li>
+        <li>🧴 Use métodos adequados para seu tipo de pele e região.</li>
+        <li>✋ Não cutuque ou arranque os pelos encravados com força.</li>
+      </ul>
+
+      <h3>Como tratar pelos encravados:</h3>
+      <ol>
+        <li>🔥 Aplique compressa morna para abrir os poros e facilitar a saída do pelo.</li>
+        <li>🧪 Use produtos com ácido salicílico ou peróxido de benzoíla para esfoliar e combater inflamações.</li>
+        <li>🚫 Evite cutucar ou forçar a saída do pelo encravado.</li>
+        <li>🌿 Aplique hidratantes calmantes, como aloe vera ou babosa.</li>
+        <li>💊 Se estiver inflamado, consulte um dermatologista para uso de anti-inflamatórios tópicos.</li>
+      </ol>
+      <blockquote>🔄 Troque a lâmina com frequência e mantenha a higiene para evitar infecções. Métodos como laser podem ajudar peles sensíveis a longo prazo.</blockquote>
+    </div>
+
+    <div id="faq" class="tab-content">
+      <h2>📚 Glossário Rápido</h2>
+      <ul>
+        <li><strong>Foliculite:</strong> Inflamação dos folículos pilosos, causando vermelhidão e pequenos caroços.</li>
+        <li><strong>Pelos Encravados:</strong> Pelos que crescem para dentro da pele, provocando irritação.</li>
+        <li><strong>Laser:</strong> Tratamento que usa luz para destruir o folículo piloso, reduzindo o crescimento do pelo.</li>
+        <li><strong>Cera Quente/Fria:</strong> Substância que adere aos pelos para puxá-los pela raiz.</li>
+        <li><strong>Pinça:</strong> Instrumento usado para puxar pelos individualmente.</li>
+        <li><strong>Epilador:</strong> Aparelho elétrico que remove pelos pela raiz com pinças rotativas.</li>
+      </ul>
+
+      <h2>❓ FAQ</h2>
+      <p><strong>1. Posso usar gilete na bundinha ou no ânus?</strong><br />
+      Sim, mas com cuidado, espelho e lubrificação. Raspe apenas a parte externa.</p>
+
+      <p><strong>2. Creme depilatório queima?</strong><br />
+      Pode queimar se não for específico para a área íntima. Faça sempre o teste antes.</p>
+
+      <p><strong>3. Qual o método mais duradouro?</strong><br />
+      Laser &gt; Cera &gt; Creme &gt; Lâmina.</p>
+
+      <p><strong>4. Posso usar cera quente em casa?</strong><br />
+      Sim, mas cuidado com a temperatura e pele irritada.</p>
+
+      <p><strong>5. Como evitar pelos encravados?</strong><br />
+      Esfolie a pele, hidrate bem, depile no sentido dos pelos e evite pele irritada.</p>
+
+      <p><strong>6. Posso depilar se estiver com irritação ou machucado?</strong><br />
+      Não, espere a pele cicatrizar para evitar infecções e piora da irritação.</p>
+
+      <p><strong>7. A depilação a laser dói?</strong><br />
+      Pode causar algum desconforto, mas varia conforme o equipamento e sensibilidade da pele.</p>
+
+      <p><strong>8. Quantas sessões de laser são necessárias?</strong><br />
+      Geralmente de 6 a 10 sessões, dependendo do tipo de pele e pelo.</p>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2025 Guia de Depilação — Informações para uso pessoal. Consulte sempre um especialista.</p>
+    <p>Créditos: Gabriel Femboy Vaquinha</p>
+  </footer>
+
+  <script>
+    function toggleTheme() {
+      const body = document.body;
+      const themeToggle = document.querySelector('.theme-toggle');
+      body.classList.toggle('dark-theme');
+
+      if (body.classList.contains('dark-theme')) {
+        themeToggle.textContent = '☀️ Modo Claro';
+        themeToggle.classList.add('dark');
+        localStorage.setItem('theme', 'dark');
+      } else {
+        themeToggle.textContent = '🌙 Modo Escuro';
+        themeToggle.classList.remove('dark');
+        localStorage.setItem('theme', 'light');
+      }
+    }
+
+    function loadTheme() {
+      const savedTheme = localStorage.getItem('theme');
+      const themeToggle = document.querySelector('.theme-toggle');
+      if (savedTheme === 'dark') {
+        document.body.classList.add('dark-theme');
+        themeToggle.textContent = '☀️ Modo Claro';
+        themeToggle.classList.add('dark');
+      } else {
+        document.body.classList.remove('dark-theme');
+        themeToggle.textContent = '🌙 Modo Escuro';
+        themeToggle.classList.remove('dark');
+      }
+    }
+
+    function openTab(tabName) {
+      const tabContents = document.querySelectorAll('.tab-content');
+      tabContents.forEach(content => {
+        content.classList.remove('active');
+      });
+
+      const tabButtons = document.querySelectorAll('.tab-button');
+      tabButtons.forEach(button => {
+        button.classList.remove('active');
+      });
+
+      document.getElementById(tabName).classList.add('active');
+      event.currentTarget.classList.add('active');
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      loadTheme();
+      document.querySelector('.tab-button').classList.add('active');
+      document.getElementById('introducao').classList.add('active');
+    });
+  </script>
+</body>
+</html>
